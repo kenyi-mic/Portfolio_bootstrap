@@ -31,11 +31,7 @@ contactForm.addEventListener("submit", (e) => {
       message.value = "";
     } else {
       alert("Something went wrong");
-      firstName.value = "";
-      lastName.value = "";
-      email.value = "";
-      subject.value = "";
-      message.value = "";
+      
     }
   };
   xhr.send(JSON.stringify(formData));
