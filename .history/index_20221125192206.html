@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---Bootstrap icon cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Michael Kenyi</title>
+    <!---Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body class="v-100 bg-dark text-light">
+    <!---Navigation--->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand"><span class="badge bg-success p-2 my-2 shadow">Michael
+                    Henry</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="z-index:10">
+                    <li class="nav-item"><a href="" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+                            aria-expanded="false" aria-control="about contact" class="nav-link active">Info</a></li>
+                    <li class="nav-item"><a href="#about" role="button" data-bs-toggle="collapse" aria-expanded="false"
+                            aria-control="about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a role="button" data-bs-toggle="collapse" aria-expanded="false"
+                            aria-control="contact" href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!---Header---->
+    <header class="container fixed-top text-end mt-5">
+        <h1 class="display-1">
+            Hi. I'm <span class="badge bg-secondary">Michael</span>
+        </h1>
+        <h2 class="display-3">Mobile Application Developer</h2>
+        <!--HEADER > portfolio & email group-->
+        <div class="btn-group">
+            <!--Profile btn-->
+            <button class="btn btn-outline-success text-uppercase" type="button" data-bs-toggle="offcanvas"
+                aria-controls="portfolio" data-bs-target="#portfolio">My Portfolio</button>
+
+            <!--Email btn-->
+            <button class="btn btn-success text-uppercase" type="button" data-bs-toggle="offcanvas"
+                aria-controls="portfolio" data-bs-target="#email"><i class="bi bi-envelope-open"></i></button>
+        </div>
+        <!---Header > About & contact-->
+        <div class="row mt-3">
+            <!--About-->
+            <div class="col-md-6 mt-3">
+                <div class="collapse multi-collapse" id="about">
+                    <div class="card card-body text-start shadow bg-dark-transparent"
+                        style="background:rgba(0, 0, 0, 0.5)">
+                        <h5 class="card-title text-success">About</h5>
+                        <div class="card-text">
+                            <h3 class="text-white-50 ms-3">Michael Henry Solomon</h3>
+                            <ul class="list-unstyled ms-5">
+                                <li>Founder of <span class="text-bold"><a
+                                            href="https://www.youtube.com/@hyperdeveloper653" target="_blank"
+                                            class="text-decoration-none text-white-50">HypeDev</a></span>
+                                </li>
+                                <li>Youtube Content Creator</li>
+                                <li>Software Developer</li>
+                                <li>CS Student in <span class=" m-2 rounded"><a href="https://ugv.edu.bd/"
+                                            target="_blank" class="text-decoration-none text-white-50">UGV</a></span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!---Contact-->
+            <div class="col-md-6 mt-3">
+                <div class="collapse multi-collapse" id="contact">
+                    <div class="card card-body text-start shadow bg-dark-transparent"
+                        style="background:rgba(0, 0, 0, 0.5)">
+                        <h5 class="card-title text-success">Contact</h5>
+                        <div class="card-text">
+                            <h3 class="text-white-50 ms-3">Get in Touch
+                                <ul class="list-unstyled ms-5">
+                                    <li><i class="bi bi-house me-2 text-sucess"></i> Barisal, Bangladesh</li>
+                                    <li><i class="bi bi-signpost me-2 text-sucess"></i>C & B road, Barisal</li>
+                                    <li><i class="bi bi-telephone me-2 text-sucess"></i>+8801824035899</li>
+                                    <li><i class="bi bi-envelope me-2 text-sucess"></i>michaelkenyi13@gmail.com
+                                    </li>
+                                </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!------ Profile Image----->
+    <img src="./images/Mike-profile.png" alt="Michael Kenyi"
+        class="postion-absolute top-0 img-fluid profile-pc col-6 d-none d-lg-block d-xl-block" />
+
+    <!--Portfolio to offcanvas-->
+    <div class="offcanvas offcanvas-start bg-dark" id="portfolio" tabindex="-1"
+        aria-labelledby="offcanvasPortfolioLabel">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title text-success">
+                Portfolio
+            </h1>
+            <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close">
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Here's my portfolio information, click on the link below to access some of my contributions readily
+                published on the web. </p>
+            <ul class="list-group"><a href="https://kenyi-mic.github.io/portfolio-web/site/" target="_blank"
+                    class=" list-group-item list-group-item-success list-group-item-action mb-2"><i
+                        class="bi bi-globe2 me-2"></i>Responsive Portfolio Site (HTML & CSS)</a><a
+                    href="https://recipe-search-61085.web.app/" target="_blank"
+                    class=" list-group-item list-group-item-success list-group-item-action mb-2"><i
+                        class="bi bi-globe2 me-2"></i>Recipe Search </a><a
+                    href="https://amazon-clone-2-0-ashen.vercel.app/" target="_blank"
+                    class=" list-group-item list-group-item-success list-group-item-action mb-2"><i
+                        class="bi bi-globe2 me-2"></i>Amazon 2.0 (ecommerce)</a><a
+                    href="https://kenyi-mic.github.io/Modal-5-Solution/assignment5-solution-starter/" target="_blank"
+                    class=" list-group-item list-group-item-success list-group-item-action mb-2"><i
+                        class="bi bi-globe2 me-2"></i>David Chu Bistro(Resturant</a></ul>
+        </div>
+
+    </div>
+    <!----Email Offcanvas-->
+    <div class="offcanvas offcanvas-bottom bg-dark" tabindex="-1" id="email" aria-labelledby="offcanvasEmailLabel"
+        style="height: 50vh;">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title text-success" id="offcanvasEmaillabel">
+                Email
+            </h1>
+            <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close">
+            </button>
+
+        </div>
+        <div class="offcanvas-body d-flex w-75 flex-column m-auto">
+            <form action="" class="w-100">
+                <div class="row">
+                    <div class="col"><input type="text" aria-label="First-name" placeholder="First-name"
+                            class="form-control"></div>
+                    <div class="col"><input type="text" aria-label="Last-name" placeholder="Last-name"
+                            class="form-control"></div>
+                    <div class="col-12 mt-3">
+                        <textarea class="w-100" placeholder="Write message" rows="8"></textarea>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-outline-success mt-3 w-100">
+                        Send
+                    </button>
+                </div>
+            </form>
+        </div>
+
+
+
+    </div>
+
+
+    <!---Bootstrap javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
